@@ -1,0 +1,55 @@
+.top-nav>li{
+    float: left;
+    margin-right: 45px;
+    text-align: center;
+}
+
+.top-nav li{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.top-nav li:nth-last-of-type(1){
+    padding-bottom: 0;
+}
+
+.top-nav>li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #666;
+
+}
+
+.top-nav li ul{
+    box-sizing: border-box;
+    padding: 15px 0;
+    width: 110px;
+    background: white;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 9;
+    top: 35px;
+    left: -30px;
+    visibility: hidden; /*这里只能用hidden 不能display*/
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 10px -3px #6f6f6f;
+}
+.top-nav ul ul{
+    margin-left: 20px;
+    margin-top: 20px;
+    top: -15px;
+    left: 112px;
+}
+.top-nav ul li:hover>ul{
+    margin-left: 0px;
+}
+
+.top-nav li:hover>ul{
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+.top-nav ul li:hover>a{
+    color: #7cb358;
+}
